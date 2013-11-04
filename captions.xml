@@ -1,0 +1,20 @@
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+            <head>
+                <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+                    <ttm:title/>
+                    <ttm:description/>
+                    <ttm:copyright/>
+                </metadata>
+
+                <styling xmlns:tts="http://www.w3.org/ns/ttml#styling">
+                    <style xml:id="amara-style" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:fontSize="18px" tts:textAlign="center"/>
+                </styling>
+
+                <layout xmlns:tts="http://www.w3.org/ns/ttml#styling">
+                    <region xml:id="amara-subtitle-area" style="amara-style" tts:extent="560px 62px" tts:padding="5px 3px" tts:backgroundColor="black" tts:displayAlign="after"/>
+                </layout>
+            </head>
+            <body region="amara-subtitle-area">
+                
+            <div><p begin="00:00:00.000" end="00:00:01.588">He won't do it, he doesn't get it...</p><p begin="00:00:01.588" end="00:00:04.209">What's not to get!? Let me talk to him...</p><p begin="00:00:04.209" end="00:00:06.016">Alright but, ah, he's in a bad mood.</p><p begin="00:00:06.016" end="00:00:08.851">You can do this, you're perfect! The script is perfect!</p><p begin="00:00:09.020" end="00:00:12.121">Just believe in the concept. </p><p begin="00:00:12.121" end="00:00:14.144">Just look at the camera, and let it out.<br /></p><p begin="00:00:14.144" end="00:00:16.444">Breathe, and release...<br /></p><p begin="00:00:16.444" end="00:00:18.772">Don't read the script, be the script!<br /></p><p begin="00:00:18.772" end="00:00:21.348">Breathe, and release!<br /></p><p begin="00:00:21.348" end="00:00:22.586">Just let it all out...<br /></p><p begin="00:00:22.586" end="00:00:24.101">Find your motivation!<br /></p><p begin="00:00:24.101" end="00:00:25.655">Just roar, don't hold back...<br /></p><p begin="00:00:25.778" end="00:00:27.124">Roarrrrr!!!<br /></p><p begin="00:00:27.124" end="00:00:28.762">Roar! roar! roarrrr!<br /></p><p begin="00:00:28.762" end="00:00:30.596">And a-r-t-i-c-u-l-a-t-e!<br /></p><p begin="00:00:30.596" end="00:00:34.749">This... this isn't, this isn't...<br /></p><p begin="00:00:35.072" end="00:00:42.525">[Cat yawns and leaves the set]<br /></p><p begin="00:00:42.586" end="00:00:47.173">- Maybe cat videos aren't the best videos for your Enterprise Video Channel...</p><p begin="00:00:47.173" end="00:00:51.641">Need help programming your organization's video channel? And making content that people really want to watch?<br /></p><p begin="00:00:51.641" end="00:00:54.278">Tune-in to Kaltura's "What's On" Webinar<br /></p><p begin="00:00:54.340" end="00:00:57.374">Join Jordan Berman, CEO of Office Engagement Network<br /></p><p begin="00:00:57.374" end="00:01:00.675">and me, David P. Kronmiller, host and creator of I Went To Film School So You Don't Have To</p><p begin="00:01:00.828" end="00:01:05.587">In an entertaining and informative webinar that demystifies how to program your video channel<br /></p><p begin="00:01:05.633" end="00:01:08.586">It's time to unleash your inner Spielberg...<br /></p><p begin="00:01:08.694" end="00:01:10.646">Or Sofia Coppola...</p><p begin="00:01:10.646" end="00:01:14.646">..</p></div></body>
+        </tt>

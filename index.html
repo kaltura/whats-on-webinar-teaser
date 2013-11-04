@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en" itemscope itemtype="http://schema.org/Product"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>What's On? How To Create and Curate Engaging Content!</title>
+        <meta name="description" content="Join this entertaining webinar that demystifies the creation and curation of compelling content that delivers your message on budget. Learn essential strategies in video programming and production as well as practical tips and tricks that are easy to implement and will go a long way.  Because hope is not a method!">
+        <meta name="author" content="Kaltura">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8"/>
+        
+        <!--Facebook Metadata /-->
+        <meta property="og:url" content="http://videos.kaltura.com/whatson_webinar/" />
+        <!-- Use the following as the URL to make Mobile devices to directly play the video instead of going to the hosting site.
+            The video will not really play in-lin on the FB wall, it will be opened in a new browser window and, thus in Mobile will launche the native player.
+            Note – This will make a poor experience on Desktop, and will disable our ability to collect statistics, as it will directly go to the video instead through our player.
+            Note 2 – this will FAIL in Facebook's debugger, even though it will work in the Wall. The reason it fails is because Facebook expects a real website URL on og:url. 
+            Note 3 – on Tablet users expect in-browser playback, and this will immediately launch the native player instead…
+        <meta property="og:url" content="http://cdnapi.kaltura.com/p/243342/sp/24334200/playManifest/entryId/1_c9mv0l7n/flavorId/1_4uy46pgt/format/url/protocol/http/a.mp4" />
+        -->
+        <!-- Set the following to get Facebook insights/tracking 
+            Get your Facebook app Id from: https://developers.facebook.com/apps/	
+        -->
+        <meta property="fb:app_id" content="122405801272254" />
+        <!-- Video details: -->
+        <meta property="og:title" content="What's On? How To Create and Curate Engaging Content!" />
+        <meta property="og:description" content="Join this entertaining webinar that demystifies the creation and curation of compelling content that delivers your message on budget. Learn essential strategies in video programming and production as well as practical tips and tricks that are easy to implement and will go a long way.  Because hope is not a method!" />
+        <!-- This describes the nature of this video to Facebook, it doesn't have a practical use yet. 
+            Facebook probably use it internally for better content classification.
+            Can be: 'video.movie', 'video.episode', 'video.tv_show', or 'video.other'
+             -->
+        <meta property="og:type" content="video.other" />
+        <!-- This is the thumbnail for the video: -->
+        <meta property="og:image" content="http://cdnbakmi.kaltura.com/p/1379682/thumbnail/entry_id/0_mqkh79fu/width/800/type/1/quality/100" />
+        <!-- probably used for internal site classification, no aparent practical use yet -->
+        <meta property="og:site_name" content="What's On? How To Create and Curate Engaging Content!" />
+        <!-- 
+            There are two bugs with Facebook's video fallback:
+            Secure URL is not acted on: http://developers.facebook.com/bugs/374114345976370/
+            type video/mp4 is not acted on: http://developers.facebook.com/bugs/463064127056326/ 
+            According to Facebook, the Open Graph was modified in 2011.
+            The original specifications: http://developers.facebook.com/docs/opengraphprotocol/
+            The new specifications: https://developers.facebook.com/docs/opengraph/video/
+            You'll notice that in the original specs Facebook defined 'fallback' tags for mp4 on HTML5 environments.
+            The new specs obviously dropped that support, as no fallback nor mp4 tags are defined.
+        -->
+        <!-- Additional metadata about your video: -->
+        <!-- When was the video first released, expressed in ISO 8061 format -->
+        <!-- meta property="og:video:release_date" content="2013-03-15" / -->
+        <!-- meta property="og:video:duration" content="107" / --> <!-- video duration in seconds -->
+        <!-- For more, visit: https://developers.facebook.com/docs/opengraph/video/ -->
+        
+        <!--Google+ Metadata -
+            For more info: https://developers.google.com/+/plugins/snippet/
+            Google+ claims to support schema.org and facebook's open graph
+            We're adding the following schema.org for best compliancy as Google+ doesn't seem to recognize video from OG
+            Note the inline tags on the kaltura_player div as well
+            More info about schema.org at: http://schema.org/VideoObject
+            To debug your page, use: http://www.google.com/webmasters/tools/richsnippets 
+        -->
+        <meta itemprop="name" content="What's On? How To Create and Curate Engaging Content!">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./fencybox/jquery.fancybox.pack.js?v=2.1.4"></script>
+        <link rel="stylesheet" type="text/css" href="./fencybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                kWidget.addReadyCallback( function( playerId ){
+                    var kdp = $('#' + playerId ).get(0);
+                    kdp.kBind( 'playerPlayEnd', function() {
+                        $.fancybox.open({
+                            padding: 0,
+                            closeClick : true,
+                            closeBtn: true,
+                            helpers : {
+                                overlay : null
+                            },
+                            href : 'https://www4.gotomeeting.com/register/719361343',
+                            type : 'iframe'
+                        });
+                    });
+                });
+                $("#registerbtn a").click(function() {
+                    $.fancybox.open({
+                        padding: 0,
+                        closeClick : true,
+                        closeBtn: true,
+                        helpers : {
+                            overlay : null
+                        },
+                        href : 'https://www4.gotomeeting.com/register/719361343',
+                        type : 'iframe'
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+        <!-- Facebook Social Plugins: -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=122405801272254";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div id="header">
+            <div id="logo">
+                <a href="http://videos.kaltura.com">
+                    <img src="./img/kaltura_logo.png" alt="Videos Portal Home">
+                </a>
+            </div>
+            <div id="inspirelogo">
+                <a href="http://corp.kaltura.com/live-webinars">
+                    <img src="./img/kaltura-inspire-webinar.png" alt="Kaltura Inspire Webinars Home">
+                </a>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="main-banner">
+            <div id="maincontent">
+                <div id="title">
+                    <h1>What's On?</h1>
+                    <h2>How To Create &amp; Curate Engaging Content!</h2>
+                    <h3>Kaltura Inspire Webinar</h3>
+                    <p>Tune-in to the first "What’s On?" Kaltura Inspire Webinar. Jordan Berman, Founder &amp; CEO of <a href="http://ofc.tv/" target="_blank">OFC: The Office Engagement Network</a>, and David P. Kronmiller, Host and Creator of our newly launched web series, <a href="http://www.iwent2filmschool.com/" target="_blank">I Went To Film School So You Don't Have To!</a>, in an entertaining webinar that demystifies the creation and curation of compelling content that delivers your message on budget.</p>
+                    <div id="actionbuttons">
+                        <div id="registerbtn">
+                            <a href="#">
+                                <img src="./img/webinar-register-button.png" alt="Kaltura Inspire Webinars Home">
+                            </a>
+                        </div>
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                            <a class="addthis_button_preferred_1"></a>
+                            <a class="addthis_button_preferred_2"></a>
+                            <a class="addthis_button_preferred_3"></a>
+                        </div>
+                        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520b5ff05f39dffa"></script>
+                        <!-- AddThis Button END -->
+                    </div>
+                </div>
+                <div id="mainvideo">
+                    <!-- Kaltura Player Embed (AutoEmbed): -->
+                    <div id="kaltura_player_1363401304" style="width: 586px; height: 360px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+						<span itemprop="name" content="What's On? How To Create and Curate Engaging Content!"></span>
+						<span itemprop="description" content="Tune-in to the first What’s On? Kaltura Inspire Webinar. Join Jordan Berman, Founder & CEO of OFC: The Office Engagement Network, and David P. Kronmiller, Host and Creator of our newly launched web series, I Went To Film School So You Don't Have To, in an entertaining webinar that demystifies the creation and curation of compelling content that delivers your message on budget. Learn essential strategies in video programming and production as well as practical tips and tricks that are easy to implement and will go a long way. Because hope is not a method!"></span>
+						<span itemprop="duration" content="T1M28S"></span>
+						<span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1379682/thumbnail/entry_id/0_mqkh79fu/width/800/type/1/quality/100"></span>
+						<span itemprop="thumbnailUrl" content="http://cdnbakmi.kaltura.com/p/1379682/thumbnail/entry_id/0_mqkh79fu/width/800/type/1/quality/100"></span>
+						<span itemprop="width" content="586"></span>
+						<span itemprop="height" content="360"></span>
+						<span itemprop="playerType" content="Flash"></span>
+					    <span itemprop="embedUrl" content="http://cdnapi.kaltura.com/index.php/kwidget/cache_st/1383598108/wid/_1379682/uiconf_id/15961522/entry_id/0_mqkh79fu"></span>
+					    <span itemprop="contentUrl" content="http://cdnapi.kaltura.com/p/1379682/sp/137968200/playManifest/entryId/0_mqkh79fu/flavorId/0_quetb4pv/format/url/protocol/http/Whats-On-How-To-Create-and-Curate-Engaging-Content.mp4"></span>
+					    <span itemprop="caption" content="http://videos.kaltura.com/flipped_webinar/captions.srt" ></span>
+					</div>
+					<script src="//cdnapi.kaltura.com/p/1379682/sp/137968200/embedIframeJs/uiconf_id/15961522/partner_id/1379682?autoembed=true&entry_id=0_mqkh79fu&playerId=kaltura_player_1363401304&cache_st=1383298108&width=586&height=360&flashvars[streamerType]=auto"></script>
+                    <!-- Prompt IE 6 users to install Chrome Frame. We suggest that you not support IE 6.
+                       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+                    <!--[if lt IE 7 ]>
+                        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+                        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+                    <![endif]-->
+                </div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="subcontent">
+            <h1>Join the discussion...</h1>
+            <div class="fb-comments" data-href="http://videos.kaltura.com/whatson_webinar/" data-width="960" data-num-posts="10"></div>
+        </div>
+        
+        
+        <div class="footerContainer" id="footer">
+            <div class="footercontent">
+                <p class="footer-text">Kaltura provides the world’s first Open Source Online Video Platform, transforming the way people work, learn, and entertain using online video.  The Kaltura platform engages hundreds of millions of viewers by providing media companies advanced video management, publishing, and monetization tools that increase their reach and monetization and simplify their video operations. Kaltura offers next generation learning for millions of students and teachers by providing educational institutions disruptive online video solutions for improved teaching, learning, and increased engagement across campuses and beyond. For more information visit: <a href="http://corp.kaltura.com" target="_blank">corp.kaltura.com</a>.</p>
+                <hr>
+                <a href="http://corp.kaltura.com/" class="footer-logo"><img width="103" height="56" src="./img/kaltura-logo-footer.png"></a>
+                
+                <p class="footer-copyright">Copyright © <span id="yearspan">2013</span> Kaltura Inc.<br>
+    All Rights Reserved. Designated trademarks and brands are the property of their respective owners, Use of this web site constitutes acceptance of the <a href="http://corp.kaltura.com/terms-of-use">Terms of Use</a> and <a href="http://corp.kaltura.com/privacy-policy">Privacy Policy</a>, User submitted media on this site is licensed under: Creative Commons Attribution-Share Alike 3.0 Unported License. Creative Commons License</p>
+            </div>
+        </div>
+        
+        <!-- Social Widget Rendering Javascript /-->
+        <script src="http://platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+        </script>
+        
+        <!-- Marketo Tracking -->
+        <script type="text/javascript">
+            document.write(unescape("%3Cscript src='" + document.location.protocol + "//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script>Munchkin.init('984-SDM-859');</script>
+
+        <!-- InsightEra Tracking -->
+        <script type="text/javascript">
+			window.AIConfig = {};
+			window.AIConfig.accountId = 'kaltura-videos';
+			window.AIConfig.mailTextField = 'edit-submitted-contact-email';
+			document.write(unescape("%3Cscript src='http://cloud.insightera.com/js/it.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+        <!-- Google Analytics Tracking -->
+        <script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-33351224-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+    </body>
+</html>
